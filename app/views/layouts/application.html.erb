@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="dndApp">
+<head>
+    <title>Drag Drop iFrame using Angular JS Directive</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+    <style>
+        #tools-group li{float:left;width:25%;padding-right:5px;list-style: none;height:60px;border: 1px solid #000;margin-right:4px;margin-top:5px;background-color: #efefef}
+        #onPageDiv{height:0px;border:1px solid #000000;background-color: #efefef}
+        #ifrContainer{height:100%;left:0;
+
+        }
+        #ifr{width:800px;height: 800px;}
+        .drag-active {z-index: 2;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity = 100);opacity: 1;}
+        .drop-hover{ border: 2px dashed #51b62b; }
+    </style>
+</head>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

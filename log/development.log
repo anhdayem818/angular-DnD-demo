@@ -1,0 +1,1978 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:23:16 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 870ms (Views: 859.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-22 14:23:17 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-22 14:23:17 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-22 14:23:17 +0700
+
+
+Started GET "/inner.html" for 127.0.0.1 at 2015-07-22 14:23:17 +0700
+
+ActionController::RoutingError (No route matches [GET] "/inner.html"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.8ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.8ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:24:31 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inner.html" for 127.0.0.1 at 2015-07-22 14:24:31 +0700
+
+ActionController::RoutingError (No route matches [GET] "/inner.html"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (34.1ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (64.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/app.self-468cf6f0ec07adbceb3fd8de535f5c2df1c401b34e019d82314f7117498f9e34.js?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-07-22 14:25:41 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:28:13 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:29:19 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/app.self-468cf6f0ec07adbceb3fd8de535f5c2df1c401b34e019d82314f7117498f9e34.js?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-07-22 14:31:05 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:31:09 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app.js" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/app.self-468cf6f0ec07adbceb3fd8de535f5c2df1c401b34e019d82314f7117498f9e34.js?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-07-22 14:33:50 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/app.self-468cf6f0ec07adbceb3fd8de535f5c2df1c401b34e019d82314f7117498f9e34.js?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+
+Started GET "/app.js" for 127.0.0.1 at 2015-07-22 14:34:05 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.2ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 14:35:39 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app.js" for 127.0.0.1 at 2015-07-22 14:35:39 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.2ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:26:05 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1145ms (Views: 1125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app.js" for 127.0.0.1 at 2015-07-23 08:26:08 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.2ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (6.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:26:50 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1607ms (Views: 1605.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-75213ddc6134da22f5de8ff3054c9466fb553c49029bcf2245e2a2bf9143ae0f.js?body=1" for 127.0.0.1 at 2015-07-23 08:26:53 +0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-23 08:26:53 +0700
+
+
+Started GET "/app.js" for 127.0.0.1 at 2015-07-23 08:26:53 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:28:12 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 370ms (Views: 369.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Drag%20Drop%20iFrame%20using%20Angular%20JS%20Directive_files/inner.html" for 127.0.0.1 at 2015-07-23 08:28:13 +0700
+
+ActionController::RoutingError (No route matches [GET] "/Drag%20Drop%20iFrame%20using%20Angular%20JS%20Directive_files/inner.html"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:28:48 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 364ms (Views: 363.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:29:24 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 363ms (Views: 362.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/accordion.self-c95f320275150a94241b004a91e21eef9c5ae9965a793cb3e2475f6078a1670d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/droppable.self-a7a2b4c2cec8fc176f51e4e4291d92bfd3eec40b6a580b47fc54c16334d52882.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-blind.self-ed102209d7aa0b7374f3db8478cc7dcff5f9980d3146e8bf9fbfab959c6d5d8a.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-bounce.self-bfcb9288797ecd234ddeedf4fbc5b4c9de94a4e6d8d44e6faa5b5e9836fad9fd.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-clip.self-7368e4597c32360b162d264ff8bbd0cf9fb1535eb9b4564e6eb7c1db3c774bf3.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-drop.self-294aaa72126ad9c94d6558cca792eb3716754713aca98f18a9dd7c493150ed92.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-explode.self-68e74dc114a52f3f4d7033e40c39196961bdcf439652daa2e98baa115c7bb44b.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-fade.self-42d542a5253e0a610717460102ee6bee339c656cc188e491d89eb0779043c963.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-fold.self-ad9967f153423916300dbf1104b00f7ad7bbd6a222a0fcc1012ebe251bcb13c8.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-highlight.self-f922b7179ab8ccfa7865141f38865bba0a3d2bdceba7561c27ca14544dbfd996.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-size.self-368aecefa09656a2be5c72dc8e685b120363a3df812134cbd2dd998bafa179fd.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-scale.self-884a5abcb6d90fcd9f9a071aa8329638184df688afced1b1d3b6be6c69f4dd7f.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-puff.self-93415831093923a70f671d73e8d0b3d94deb37ac7472a036a4add545f565c166.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.self-eb107c0d136eccdfbd8a2f0f2ee71e0f6911cb300c6b63cc2fe4f6532e6a9a97.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-shake.self-63bcc14897aac5b84e10690be94d64d5724f864aa14c913b4d1030c461a256ad.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-slide.self-c93054a4a80d1f986760806d81ab067e4a4120bf103337e152ecc24d36e785f6.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/effect-transfer.self-181245634ec522320fc1081f6dbf94fd982f34eefa03555f76817dedfcdea336.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/progressbar.self-a259ff5a2a5e7aef0ec21bda94edd0f6bc1e9821128d901de415956edf212b0d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/selectable.self-42e53fc2f95211314e36a8094c42560f869c207f16d68cfc206aa37201dcdc03.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/selectmenu.self-09dbcac573f0e508194bd9deff254db090889b380d030261857860309c0918e8.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/slider.self-8af8d2a0661743ba88b4cfb99d5c8c874cfa3fc6528ae4e9252366b388def0b7.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/spinner.self-3c8c95a7bc9c877d0f9c16789246bbedda6b8e8fbf5927951babdab775aed02e.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui/tooltip.self-38f04ac3a6c8fb2391ec6832b68845671cc9013a94371b7eb239478f4835eb73.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/jquery-ui.self-52111578aa54225c9ebfe06f78a62771020ee548bb27d62228ee3f5e6633969d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/angular.self-75213ddc6134da22f5de8ff3054c9466fb553c49029bcf2245e2a2bf9143ae0f.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/app.self-468cf6f0ec07adbceb3fd8de535f5c2df1c401b34e019d82314f7117498f9e34.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:25 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 435ms (Views: 433.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/accordion.self-c95f320275150a94241b004a91e21eef9c5ae9965a793cb3e2475f6078a1670d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/droppable.self-a7a2b4c2cec8fc176f51e4e4291d92bfd3eec40b6a580b47fc54c16334d52882.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-blind.self-ed102209d7aa0b7374f3db8478cc7dcff5f9980d3146e8bf9fbfab959c6d5d8a.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-bounce.self-bfcb9288797ecd234ddeedf4fbc5b4c9de94a4e6d8d44e6faa5b5e9836fad9fd.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-clip.self-7368e4597c32360b162d264ff8bbd0cf9fb1535eb9b4564e6eb7c1db3c774bf3.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-drop.self-294aaa72126ad9c94d6558cca792eb3716754713aca98f18a9dd7c493150ed92.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-explode.self-68e74dc114a52f3f4d7033e40c39196961bdcf439652daa2e98baa115c7bb44b.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-fade.self-42d542a5253e0a610717460102ee6bee339c656cc188e491d89eb0779043c963.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-fold.self-ad9967f153423916300dbf1104b00f7ad7bbd6a222a0fcc1012ebe251bcb13c8.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-highlight.self-f922b7179ab8ccfa7865141f38865bba0a3d2bdceba7561c27ca14544dbfd996.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-size.self-368aecefa09656a2be5c72dc8e685b120363a3df812134cbd2dd998bafa179fd.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-scale.self-884a5abcb6d90fcd9f9a071aa8329638184df688afced1b1d3b6be6c69f4dd7f.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-puff.self-93415831093923a70f671d73e8d0b3d94deb37ac7472a036a4add545f565c166.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-shake.self-63bcc14897aac5b84e10690be94d64d5724f864aa14c913b4d1030c461a256ad.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:35 +0700
+
+
+Started GET "/assets/jquery-ui/effect-slide.self-c93054a4a80d1f986760806d81ab067e4a4120bf103337e152ecc24d36e785f6.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.self-eb107c0d136eccdfbd8a2f0f2ee71e0f6911cb300c6b63cc2fe4f6532e6a9a97.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/effect-transfer.self-181245634ec522320fc1081f6dbf94fd982f34eefa03555f76817dedfcdea336.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/progressbar.self-a259ff5a2a5e7aef0ec21bda94edd0f6bc1e9821128d901de415956edf212b0d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/selectable.self-42e53fc2f95211314e36a8094c42560f869c207f16d68cfc206aa37201dcdc03.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/slider.self-8af8d2a0661743ba88b4cfb99d5c8c874cfa3fc6528ae4e9252366b388def0b7.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/selectmenu.self-09dbcac573f0e508194bd9deff254db090889b380d030261857860309c0918e8.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/spinner.self-3c8c95a7bc9c877d0f9c16789246bbedda6b8e8fbf5927951babdab775aed02e.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui/tooltip.self-38f04ac3a6c8fb2391ec6832b68845671cc9013a94371b7eb239478f4835eb73.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/angular.self-75213ddc6134da22f5de8ff3054c9466fb553c49029bcf2245e2a2bf9143ae0f.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/jquery-ui.self-52111578aa54225c9ebfe06f78a62771020ee548bb27d62228ee3f5e6633969d.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/app.self-468cf6f0ec07adbceb3fd8de535f5c2df1c401b34e019d82314f7117498f9e34.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-23 08:29:36 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 08:37:09 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 08:37:43 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 430ms (Views: 429.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 08:37:44 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 09:52:10 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 09:57:15 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 381ms (Views: 380.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 09:57:15 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 09:58:26 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 09:58:26 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 09:58:26 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 09:58:44 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 09:58:44 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 09:58:44 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 09:58:44 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 09:58:44 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 09:59:12 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 09:59:12 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 09:59:12 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 09:59:12 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 09:59:12 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:00:23 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:00:23 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:00:23 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:00:23 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:00:23 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:01:04 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:01:04 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:01:04 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:01:04 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:01:04 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:01:20 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:01:20 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:01:20 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:01:20 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:01:20 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:04:51 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:04:51 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:12:44 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:12:44 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:12:44 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:12:44 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:12:44 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:15:02 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:15:02 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:15:06 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:15:06 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:15:06 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:15:06 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:15:06 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:16:13 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:16:13 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:16:13 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:16:13 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:16:13 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:16:58 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:16:58 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:17:56 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:17:56 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:17:56 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:17:56 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:17:56 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-23 10:51:46 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-23 10:51:46 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-23 10:51:46 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-23 10:51:46 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-23 10:51:46 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 10:51:43 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 432ms (Views: 418.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-27 10:51:44 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-27 10:51:44 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-27 10:51:44 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 10:51:44 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 10:52:00 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-27 10:52:00 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-27 10:52:00 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-27 10:52:00 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 10:52:00 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 10:58:03 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-27 10:58:03 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 10:58:03 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-27 10:58:03 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-27 10:58:03 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 10:58:09 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-27 10:58:09 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 10:58:09 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-27 10:58:09 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-27 10:58:09 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 10:58:13 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 10:58:14 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-27 10:58:14 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-27 10:58:14 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 10:58:14 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-27 10:58:14 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 11:03:39 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 11:03:39 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-27 11:03:47 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-27 11:03:47 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-27 11:03:47 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-27 11:03:47 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-27 11:03:47 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:11:18 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 286ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:11:19 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:11:19 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:11:19 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:11:19 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:11:26 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:11:26 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:11:26 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:11:26 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:11:26 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:11:30 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:11:31 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:19:38 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:19:38 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:19:38 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:19:38 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:19:38 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:23:54 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:23:54 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:23:54 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:23:54 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:23:54 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:24:19 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:24:19 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:24:19 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:24:20 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:24:20 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:24:43 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:24:43 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:24:43 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:24:43 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:24:43 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-28 15:25:06 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-28 15:25:06 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-28 15:25:06 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-28 15:25:06 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-28 15:25:06 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-29 13:34:35 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 286ms (Views: 274.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-29 13:34:36 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-29 13:34:36 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-29 13:34:36 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 13:34:36 +0700
+
+
+Started GET "/app/assets/javascripts/app.js" for 127.0.0.1 at 2015-07-29 13:51:22 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.8ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.7ms)
+
+
+Started GET "/app/assets/javascripts/app.js" for 127.0.0.1 at 2015-07-29 13:51:40 +0700
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (64.6ms)
+
+
+Started GET "/assets/javascripts/app.js" for 127.0.0.1 at 2015-07-29 13:52:23 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/javascripts/app.js"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kop/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.3ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/kop/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (48.1ms)
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 13:53:04 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 13:53:27 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 13:53:49 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 13:53:56 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 13:54:08 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 14:08:34 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 14:08:46 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 14:09:06 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-29 14:09:32 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-29 14:09:32 +0700
+
+
+Started GET "/assets/application.self-1e31a2a1f5906db77c76acfa995edbe974f161209935fca5404515e00b57a3b3.js?body=1" for 127.0.0.1 at 2015-07-29 14:09:32 +0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-29 14:09:32 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 14:54:33 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 14:57:06 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 14:57:22 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:01:06 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:01:47 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:02:40 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:03:15 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:03:30 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:04:13 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:04:26 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:05:02 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:05:10 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:06:28 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:07:58 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:08:00 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:08:00 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:08:03 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:09:12 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:10:25 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:21:27 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:21:53 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:23:48 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:24:00 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:24:45 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:26:30 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:26:51 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:29:06 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:31:26 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:32:20 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:33:44 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:34:02 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:35:07 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:35:58 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:36:28 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:36:46 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:36:52 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:36:54 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:37:03 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:38:05 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:38:12 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:38:34 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:38:42 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:39:23 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:39:42 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:39:57 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:40:57 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:41:48 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:53:00 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:53:37 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:55:20 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:55:31 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:55:40 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:56:50 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 15:57:44 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:00:23 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:01:27 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:02:05 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:02:15 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:02:45 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:03:01 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:03:14 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:03:52 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:05:19 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:08:57 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:09:35 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:10:48 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:11:10 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-29 16:33:15 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:36:38 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:37:19 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:37:59 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:38:41 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:39:59 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:40:22 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:42:11 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:44:21 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:45:12 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:45:23 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:45:47 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:46:41 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:46:59 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:47:32 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:47:53 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:48:37 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 16:49:03 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:02:19 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:02:47 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:06:24 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:08:31 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:08:51 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:09:13 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:10:02 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:10:49 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:10:58 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:11:23 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:12:03 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:12:37 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:13:08 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:15:43 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:16:46 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:17:13 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:17:23 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:18:56 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:19:21 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:19:59 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:20:17 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:20:28 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:20:40 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:21:14 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:21:34 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:27:58 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:29:02 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:29:43 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:30:53 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:33:43 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:34:19 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:39:26 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:39:57 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:40:33 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:40:38 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 17:41:15 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-29 19:52:52 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:23:12 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:24:13 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:25:27 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:25:42 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:27:13 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:28:38 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:28:56 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:29:16 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:29:50 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:30:39 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:30:47 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:31:07 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:32:00 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:55:28 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 08:56:26 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:58:18 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:58:24 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:58:42 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:58:54 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:59:20 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 08:59:22 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 09:00:14 +0700
+
+
+Started GET "/assets/app.js" for 127.0.0.1 at 2015-07-31 09:01:13 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:06:46 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:07:07 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:07:38 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:07:50 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:08:29 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:08:37 +0700
+
+
+Started GET "/assets/app1.js" for 127.0.0.1 at 2015-07-31 09:15:50 +0700

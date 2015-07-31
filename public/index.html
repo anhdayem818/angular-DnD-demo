@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="dragDrop">
+<head>
+	<title> DnD 2</title>
+		
+    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <style type="text/css">
+        .bin {
+          min-height: 150px;
+          min-width: 150px;
+          float: left;
+          border: 1px solid red;
+          padding: 20px;
+        }
+        .item {
+          min-height: 150px;
+          min-width: 150px;
+          background: blue;
+          float: right;
+        }
+        .drag {
+          opacity: 0.5;
+        }
+        .over {
+          border:1px solid green;
+        }
+        #tools-group li{float:left;width:25%;padding-right:5px;list-style: none;height:60px;border: 1px solid #000;margin-right:4px;margin-top:5px;background-color: #efefef}
+        #onPageDiv{height:0px;border:1px solid #000000;background-color: #efefef}
+        #ifrContainer{height:100%;left:0;
+
+        }
+        #ifr{width:800px;height: 800px;}
+        .drag-active {z-index: 2;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity = 100);opacity: 1;}
+        .drop-hover{ border: 2px dashed #51b62b; }
+    </style>
+</head>
+<body>
+  <div  ng-controller="DragDropCtrl">
+	  <div class="bin" droppable drop="handleDrop" ng-repeat="bin in [1, 2]" bin="bin" id="bin{{ bin }}">{{ bin }}</div>
+
+	  <div style="float:left ;min-width:50px;min-height: 50px; border:solid 1px red;" draggable droppable id="bin3"> </div>
+	  <div class="item" id="item{{ item }}" ng-repeat="item in [1, 2, 3]" draggable item="item">{{ item }}</div>
+
+	  <div data-raw="<button draggable> tesst button</button>" id="itembutton" class="item" draggable> </div>
+	 <div class="iframe-holder">
+                    <div id="ifrContainer">
+                        <iframe id="ifr" src="inner.html" droppable-iframe></iframe>
+                    </div>
+                   
+                </div><!-- /.iframe-holder -->
+    
+  </div>
+  <script src="//nboychev.com/tests/angular/Drag%20Drop%20iFrame%20using%20Angular%20JS%20Directive_files/jquery-2.0.3.min.js"></script>
+  <script src="//nboychev.com/tests/angular/Drag%20Drop%20iFrame%20using%20Angular%20JS%20Directive_files/jquery-ui.js"></script>
+  <script src="//nboychev.com/tests/angular/Drag%20Drop%20iFrame%20using%20Angular%20JS%20Directive_files/angular.min.js"></script>
+  <script src="../assets/app1.js"></script>
+
+</body>
+
+</html>

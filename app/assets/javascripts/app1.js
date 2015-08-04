@@ -1,4 +1,16 @@
  
+  $(document).ready(function(){
+    function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+       }
+    }
+  });
   'use strict';
 
 	var app = angular.module('dragDrop', []);
@@ -64,7 +76,7 @@
       }
     });
 
-    app.directive('droppable', function() {
+    app.directive('droppable', function($compile) {
       return {
         scope: {
           drop: '&'         
@@ -81,7 +93,11 @@
               // allows us to drop
               if (e.preventDefault) e.preventDefault();
               this.classList.add('over');
-              console.log("drop over" + element[0].id);
+              //console.log("drop over" + element[0].id);              
+              //console.log("X : " + e.clientX + " Y :" + e.clientY);
+              <!-- Tim do dai va cao cua element-->
+              //var b = element.height();
+              //console.log("height: " + b);
               return false;
             },
             false
@@ -92,7 +108,7 @@
             function(e) {
               if (e.stopPropagation) e.stopPropagation();
               this.classList.add('over');
-              console.log("drop enter" + element[0].id);
+              console.log("drop enter" + element.prop('tagName'));
               return false;
             },
             false
@@ -123,8 +139,8 @@
               if(data == undefined) 
               	data = htmlItem;
               console.log(data);
-
-              $(this).append(data);
+              var k = $compile(data)(scope);
+              $(this).append(k);
               // call the passed drop function
               scope.$apply(function(scope) {
                 var fn = scope.drop();
@@ -140,7 +156,20 @@
     	  }
     	});
 
-    
+    app.directive('overElement', function(){     
+      return function(scope,element){
+        
+        var el = element[0];
+        el.addEventListener(
+          'mouseover',
+          function(e){
+            if (e.stopPropagation) e.stopPropagation();
+            console.log("event: onmouseover");
+          },
+          false
+        );
+      }
+    });
   	app.controller('DragDropCtrl', function($scope) {
   	  $scope.handleDrop = function(item, bin) {
   	    alert('Item ' + item + ' has been dropped into ' + bin);

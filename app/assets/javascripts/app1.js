@@ -1,59 +1,52 @@
  
   $(document).ready(function(){
-    function deleteAllCookies() {
-    var cookies = document.cookie.split(";");
-
-      for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        var eqPos = cookie.indexOf("=");
-        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-       }
-    }
+    //kiem tra xem body cua html iframe co thuoc tinh de nhan keo tha hay chua? chua thi reload page
+    var b = $('iframe').contents().find('body');
+    console.log("thuoc tinh body la");
+    console.log(b);
+    
   });
   'use strict';
 
 	var app = angular.module('dragDrop', []);
 
     app.directive('draggable', function() {
-      return function(scope, element) {
-        // this gives us the native JS object
+      return {
+        scope:{
+          comp: '='
+        },
+        link: function(scope, element) {
+          // this gives us the native JS object
 
-        var el = element[0];
-        
-        el.draggable = true;
-        
-        el.addEventListener(
-          'dragstart',
-          function(e) {
-          	 if (e.stopPropagation) e.stopPropagation();
-            e.dataTransfer.effectAllowed = 'copy';
-            console.log("dang keo : " + el.id);
-            e.dataTransfer.setData('Text', this.id);
-            this.classList.add('drag');
-            return false;
-          },
-          false
-        );
-        
-        el.addEventListener(
-          'dragend',
-          function(e) {
-            this.classList.remove('drag');
-            return false;
-          },
-          false
-        );
+          var el = element[0];
+          
+          el.draggable = true;
+          
+          el.addEventListener(
+            'dragstart',
+            function(e) {
+               if (e.stopPropagation) e.stopPropagation();
+              e.dataTransfer.effectAllowed = 'copy';
+              console.log("dang keo : " + el.id);
+              e.dataTransfer.setData('Text', this.id);
+              this.classList.add('drag');
+              return false;
+            },
+            false
+          );
+          
+          el.addEventListener(
+            'dragend',
+            function(e) {
+              this.classList.remove('drag');
+              return false;
+            },
+            false
+          );
+        }
       }
     });
 
-    app.directive('test',function(){
-      return {
-          link: function(){
-              console.log("123");
-            }
-          }
-    });
     
     app.directive('droppableIframe', function($compile) {
       return {
@@ -79,7 +72,7 @@
     app.directive('droppable', function($compile) {
       return {
         scope: {
-          drop: '&'         
+          drop: '&'       
         },
         link: function(scope, element) {
           // again we need the native object
@@ -93,7 +86,8 @@
               // allows us to drop
               if (e.preventDefault) e.preventDefault();
               this.classList.add('over');
-              //console.log("drop over" + element[0].id);              
+              //console.log("drop over" + element[0].id);
+                            
               //console.log("X : " + e.clientX + " Y :" + e.clientY);
               <!-- Tim do dai va cao cua element-->
               //var b = element.height();
@@ -138,7 +132,9 @@
               var data = htmlItem.data('raw');
               if(data == undefined) 
               	data = htmlItem;
-              console.log(data);
+              console.log('components la : ');
+              console.log(scope.components);
+              //console.log(data);
               var k = $compile(data)(scope);
               $(this).append(k);
               // call the passed drop function
@@ -170,9 +166,30 @@
         );
       }
     });
+
+    app.directive('ngEdit',function($compile){
+      return {
+        link: function(scope, element)
+        {
+          var el = element[0];
+          el.addEventListener(
+            'click',
+            function(e){
+             // $(this).remove();
+            },
+            false
+          );
+        }
+      }
+    });
+
   	app.controller('DragDropCtrl', function($scope) {
   	  $scope.handleDrop = function(item, bin) {
   	    alert('Item ' + item + ' has been dropped into ' + bin);
   	  }
+
+      $scope.components={
+        button: "<button class='btn btn-primary' draggable droppable> </div>"
+      };
   	});
     

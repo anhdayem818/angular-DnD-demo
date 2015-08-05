@@ -28,7 +28,7 @@
                if (e.stopPropagation) e.stopPropagation();
               e.dataTransfer.effectAllowed = 'copy';
               console.log("dang keo : " + el.id);
-              e.dataTransfer.setData('Text', this.id);
+              e.dataTransfer.setData('Text', scope.comp);
               this.classList.add('drag');
               return false;
             },
@@ -127,16 +127,18 @@
               this.classList.remove('over');
               
               var binId = this.id;
-              var item = document.getElementById(e.dataTransfer.getData('Text'));
-              var htmlItem = $('#'+e.dataTransfer.getData('Text'));
-              var data = htmlItem.data('raw');
+              //var item = document.getElementById(e.dataTransfer.getData('Text'));
+              var htmlItem = e.dataTransfer.getData('Text');
+              console.log(htmlItem);
+              var data = htmlItem;
               if(data == undefined) 
               	data = htmlItem;
-              console.log('components la : ');
-              console.log(scope.components);
+              //console.log('components la : ');
+              //console.log(scope.components);
               //console.log(data);
-              var k = $compile(data)(scope);
+              var k = $compile(htmlItem)(scope);
               $(this).append(k);
+              $(this).removeClass('empty');
               // call the passed drop function
               scope.$apply(function(scope) {
                 var fn = scope.drop();
@@ -183,13 +185,33 @@
       }
     });
 
+    app.directive('ngPrev',function(){
+      return{
+        link: function(scope,element){
+          var lenght = element.children().length;
+          
+          if(length <=1 )
+            element.addClass('empty');
+          else 
+            element.removeClass('empty');;
+        }
+      }
+    });
   	app.controller('DragDropCtrl', function($scope) {
   	  $scope.handleDrop = function(item, bin) {
   	    alert('Item ' + item + ' has been dropped into ' + bin);
   	  }
 
       $scope.components={
-        button: "<button class='btn btn-primary' draggable droppable> </div>"
+        dropdownlist: '<div class="dropdown" ng-edit><button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"  draggable>  Dropdown  <span class="caret"></span> </button> <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1 " droppable> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li> <li role="presentation" class="divider"></li> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li> </ul> </div>',
+        button: '<button class="btn btn-primary" droppable> Button </button>',
+        row: '<div class="row" style="min-height: 50px;" droppable ng-prev> </div>',
+        navbar: '<nav class="navbar navbar-default" ng-edit><div class="container-fluid"> <!-- Brand and toggle get grouped for better mobile display --> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Brand</a> </div> <!-- Collect the nav links, forms, and other content for toggling --> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <ul class="nav navbar-nav"> <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> <li><a href="#">Link</a></li> <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> <li role="separator" class="divider"></li> <li><a href="#">One more separated link</a></li> </ul> </li> </ul> <form class="navbar-form navbar-left" role="search"> <div class="form-group"> <input type="text" class="form-control" placeholder="Search"> </div> <button type="submit" class="btn btn-default">Submit</button> </form> <ul class="nav navbar-nav navbar-right"> <li><a href="#">Link</a></li> <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a> <ul class="dropdown-menu"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li>  </ul> </li> </ul> </div><!-- /.navbar-collapse --> </div><!-- /.container-fluid --></nav>',
+        containerfluid: '<div class="container-fluid" style="min-height: 50px;" droppable ng-prev></div>',
+        container: '<div class="container" style="min-height: 50px;" droppable ng-prev></div>', 
+        thumbnail: '<div class="col-sm-6 col-md-4" droppable> <div class="thumbnail" droppable> <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTRlZjZkN2VhOGUgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNGVmNmQ3ZWE4ZSI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTE1NjI1IiB5PSIxMDUuMSI+MjQyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> <div class="caption"> <h3>Thumbnail label</h3> <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> </div> </div> </div>',
+        col_md_4: '<div class="col-md-4" droppable ng-prev> </div>',
+        p: '<p> abc</p>'
       };
   	});
     
